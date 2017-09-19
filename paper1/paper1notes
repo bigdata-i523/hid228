@@ -1,0 +1,29 @@
+
+4v's of bigdata
+
+Volume
+Energy readings from smart meters are increasing
+Customers use this data to regulate their usage, plants use this data to regulate generation
+This is picked up at high frequency
+hence huge amount of data
+
+
+
+variety
+This data is very random
+
+on generation side: 
+various sources are used 
+on dis side:
+various technologies like SCADA is used.
+
+
+
+Velocity:
+This is picked up at high frequency
+This is becoming huge day-by-day
+As this data is very huge and random .we use big data technologies to store and process this data
+
+veracity:
+
+As electrical transmitting is open to environment.This data is full of noise
