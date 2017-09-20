@@ -13,8 +13,8 @@ owner:
 paper1:
    author: 
    - Swargam, Prashanth
-     hid:228
-   - 000
+   hid:
+   - 228
    title: Big data applications in Electric Power Distribution
    abstract: 
    url: https://github.com/bigdata-i523/sample-hid000/paper1/paper1.pdf
