@@ -27,3 +27,49 @@ As this data is very huge and random .we use big data technologies to store and 
 veracity:
 
 As electrical transmitting is open to environment.This data is full of noise
+
+
+Driving motives:
+1)Lower data storage and collection charges i.e., digital data storage costing less now a days
+2)Widespread adoption of AMI 
+
+Value Proposition:
+Earlier it was not easy to collect and store data in a large scale may be excel but not quite feasible
+Now, big data enabels them to  process data.
+
+Applications: Theft detection:
+1) There are two kind of  meters one at customer end and other at admin end ( concentrator meters)
+2) Use previous available data to analyse the data diff b/w customer end and admin end
+
+Generation at customer end: 
+1) Customer now are installing self energy production system.
+2) This actually injects energy back to system
+3) We can study customer n=behaviour using this technology  with load averages as parameters
+
+development of load forecasting:
+As more meters are deployed at customer end, we can predict the load forecasting using the existing data
+
+Difficulties:
+1)Architecture design
+2)Mathematical challenges
+3)Data issues
+	a) Data is incomplete
+	b) Data from various systems. Each system has its own collection frequency
+	c) data is heterogenous
+	
+Mathematical issues: 
+Data is too huge,. Better algos like optimization algorithms ,Machile learning,mapreduce techniques must be used.
+Algorithms must be used to granule data at their at the beginning and make it small to send the data. like map reduce system.
+
+Data sources:
+1)Customer data from meters
+2)Data from Distribution systems
+3)market data
+4)weather and other miscelleanous
+
+These are stored in HDFC or distributed file system.
+
+
+risks:
+1)Data privacy
+2)failure of sensors lead to false raw data
