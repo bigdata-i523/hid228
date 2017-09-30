@@ -16,10 +16,9 @@ paper1:
    hid:
    - 228
    title: Big data applications in Electric Power Distribution
-   abstract: 
-   url: https://github.com/bigdata-i523/sample-hid000/paper1/paper1.pdf
+   abstract: TBD 
+   url: https://github.com/bigdata-i523/hid228/paper1/paper1.pdf
    type: Word
-   
    status: in progress
  ```
    
@@ -31,8 +30,8 @@ paper2:
    - Swargam, Prashanth
    hid:
    - 228
-   title: 
-   url:   
+   title: TBD
+   url: TBD
    type: word
    status: Not Started
 ```
@@ -50,8 +49,8 @@ paper2:
    - Swargam, Prashanth
    hid:
    - 228
-   title: 
-   url: 
+   title: TBD
+   url: TBD
    type: latex
    status: in progress
 ```
