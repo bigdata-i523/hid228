@@ -20,7 +20,8 @@ paper1:
    url: https://github.com/bigdata-i523/hid228/paper1/paper1.pdf
    type: Word
    status: in progress
- ```
+   chapter: Energy
+```
    
 # Paper 2
 
