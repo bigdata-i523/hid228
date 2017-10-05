@@ -18,7 +18,7 @@ paper1:
    title: Big data applications in Electric Power Distribution
    abstract: TBD 
    url: https://github.com/bigdata-i523/hid228/paper1/paper1.pdf
-   type: Word
+   type: word
    status: in progress
    chapter: Energy
 ```
@@ -33,7 +33,7 @@ paper2:
    - 228
    title: TBD
    url: TBD
-   type: word
+   type: latex
    status: Not Started
 ```
 
