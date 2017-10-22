@@ -5,8 +5,13 @@ owner:
     url: https://github.com/bigdata-i523/hid228
 paper1:
     abstract: >
-        jkfsjkfdshlkjfds bfkjhdaslkjfhdfkjhbsdkjhdkjfdhdb jksdkjdfhlkjdhfl dsfjk sfkjh DKjhdjklfh
-        /ashflkjfhlkhjHAFK jhjk dhsgjk sdghjksdghskTBD
+        Now-a-days, the process of storing the power measurements have changed. Conventional meters are replaced by the smart meters.
+        New distribution management systems like SCADA and AMI are implemented to monitor power distribution. 
+        These smart meters record the readings and communicate the data to the server. 
+        However, these systems are designed to generate the readings very frequently i.e., 15 minutes to an hour. 
+        Upon that, smart meters are being deployed at every possible location to improve the accuracy of the data.
+        This advancements in electric power distribution system results in enormous amounts of data which requires advance analytics to process, analyse and store data. 
+        This paper discusses about the implementation of Big Data technologies, challenges of implementing Big Data in Electric Power Distribution Systems.
     author:
         - Swargam, Prashanth
     chapter: Energy
