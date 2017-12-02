@@ -1,0 +1,164 @@
+\documentclass[sigconf]{acmart}
+
+\input{format/i523}
+
+\begin{document}
+\title{Big Data Analytics in Indian Premier League}
+
+
+\author{Swargam, Prashanth}
+
+\affiliation{%
+  \institution{Indiana University Bloomington}
+  \streetaddress{107 S Indiana Ave}
+  \city{Bloomington} 
+  \state{Indiana} 
+  \postcode{47408}
+}
+\email{pswargam@iu.edu}
+
+
+% The default list of authors is too long for headers}
+\renewcommand{\shortauthors}{G. v. Laszewski}
+
+
+\begin{abstract}
+
+Cricket is one of the most admired sports across the globe. Indian Premier League is one of the professional cricket leagues conducted by Board of Cricket Control India in the months of April and May. This league is famous for its diversity of players and breath-taking cricket match endings. The factors of winning change for each moment as the game progresses. As there are many players and franchises involved in the game, these factors for winning changes for each team. Data related to each player is required to analyse his performance and predict his future scope in team. Data related to factors of winning is crucial and can be analysed for predicting the results of the game. This analysis would help the team management, league administration to wisely chose the players and modify rules according to the impact of each decision. Data related some of the important factors which plays major role in deciding the match winner are analysed. Their impact is predicted and compared with the actual results. Impact of these factors are studied for each individual team and individual season of this cricket tournament. Impact of each factor is plotted and its impact in next season is predicted.
+
+\end{abstract}
+
+\keywords{Big Data, Cricket,Indian Premier League, i523}
+
+
+\maketitle
+
+
+
+\section{Introduction}
+
+Fast paced games are gaining more importance in near future. This because there are many factors which contribute to the result of the game. These factors are minor but could change the results of the game dramatically. Indian Premier League is one such type of cricket league where there are a lot factors which have their influence on the results of the game. These factors are though minor or major, will have bigger part in deciding the results of the game. These factors from the previous games can be utilised wisely to predict their influence in the upcoming matches.  These factors can be quantitatively represented in the form numbers, graphs or Booleans. This quantitative representation of data related the factors can be analysed using various analytic techniques to predict their impact on the game.
+
+
+	However, Analytics is a good way to go about this prediction, but there are several problems which should be addressed. Considering the role of batsman, it will be having parameters like balls faced, dot balls, number of boundaries, strike rate etc. Considering the role of bowler, there are various parameters like matches played, overs bowled, economy rate. There are many similar kinds of roles in the game and above-mentioned parameters are specific to one player playing only one role in the team. According to, around 500 players play for each season of cricket. These 500 players will be filtered on various factor from the pool of nearly 5,31,253 cricket players across the globe. These players can play any of the role or play multiple to roles to contribute to the result of the match. These players and cricket matches produces large amount of data which when analysed to produce structured data and analytics. Hence, there is good scope of analytics ad big data in this sport.
+	
+	
+	The data produced by the matches happening in Indian Premier League can be used to fit in mathematical models. These mathematical models are then used to study the nature and trends of the factors which influence the results of the game. Extending this model to the known values of the input factors can produce the predicted values of the impacts of these factors. Models like Linear regression, polynomial regression, radial-basis approach can be applied to do these kinds of predictive analysis. 
+
+
+
+\section{Problem Statement}
+
+There are various factors influencing the results of the game. As part of this analytics, data related to five of the most influencing factors is gathered and modelled for analysis. This data was available in raw formats which requires some amount of modelling for predictive analysis. The modelled data is used for building a mathematical model which would fit closely to the trend of these factors in matches played in all the past seasons. A part of data is assumed to be unknown. This unknown part of data is predicted by using the fitted mathematical models. Results obtained by these predictions are compared with the actual results from the data source. Impact of these factors are calculated to the ratio of one. These data is analysed for each independent team and each independent season.
+
+ 
+The report is in regard to the predictive analysis conducted on only five of the most influencing factors in the game. There are other factors in the game which might influence the result of the game. This predictive analysis will only be considered reliable only if the predicted values of the results will have high accuracy with respect to the actual results of the available data. The data is divided into two parts. All the available data is sorted with respect to date. The latest match comes later in the dataset and the earliest first. The first part of data is used to train the mathematical model. The parameters in the later part of the dataset are used to predict the result of the match. These predicted results are then compared with the actual results in the datasets to determine the accuracy of the predictive model which is used to build the analytics. This analysis produce valuable insights on the influence of these factors and the mathematical model.
+
+
+\section{Scope}
+
+The scope of the analysis is:
+
+
+1)The analytics uses the data for only five factors. These five factors are  namely toss, Batting position, Range of score, portion of runs in boundaries.
+
+
+2)The data is collected for all the seasons completed for this tournament. However, this data is sorted with respect to date and partitioned into training and testing data sets for calculating the accuracy of the model.
+
+
+3) The values of these factors are represented in usable data formats like range, Boolean, integers for analysis.
+
+
+\section{Factors in Consideration}
+
+\subsection{Batting Sequence}
+Order of batting is considered as one of the factors in consideration. Batting order is one crucial parameter which depends on various other factors of the game. Some of these parameters are the status of the pitch for the game, climate conditions of the game, previous statistics of the game and the history of the team in similar situations. The toss winner will have the privilege to decide the order of the batting. As this factor is conglomeration of various other factors stated above, batting order is considered for the analytics. This data can be represented in the form of Boolean. Where true Boolean indicates that the team referring to the statistics have batted first in the game. False indicates that the team referring to the statistics have batted second in the game.  This Boolean value depends on the values in for toss winner and toss decision.
+\subsection{Total Score}
+Score indicates the total number of runs scored by the team in any match. Score of the team depends on various other parameters of the game like team statistics and composition, impact of the opponents, and situation of the match. This parameter can be calculated from other values of extra runs, scored runs. This categorized into four categories. This first category of the innings scored not more than 100 runs. The second category of the innings scored more than 100 and less than 150 runs. The third category of the innings scored more than 150 and less than 200 hundred runs. All the other innings which scored more than 200 are categorised into fourth category. This categorization is done in accordance to the range of scores. The least scored innings were given least category value. The highest scored innings were given highest category value.
+\subsection{Score Composition}
+Composition of scored runs. The runs are majorly scored in the form of boundaries, players individual running,  and the extra runs given by then bowling team. As IPL is a T20 game which is played for short duration of time, scoring runs quickly at right time is crucial factor. Boundaries contribute to runs scored in the form of fours and sixes in the game. This is the easiest way to quickly score the runs. Team scoring high majority of runs in the form of boundaries have higher chance of imposing a higher target to the opponents or chasing down the target imposed by the opponents. Hence, this parameter is considered for analysis. This value for this parameter is a Boolean. This value is set to true, if most of the runs scored by any team in any innings are from boundaries and vice versa.
+
+\subsection{Toss}
+The batting sequence is decided by the winner of the toss. Winner of the toss will have the initial upper hand in the game to decide the sequence of the game. The winner’s decision will vary on various other factors of the game like, duration of the match, pitch behaviour throughout the game, statistics of the game. This various factors play an important role in deciding the toss winner’s decision. The value for this parameter is Boolean. The true value of the parameter indicates the team has won the toss and the false value indicates the team has not won the toss.
+
+\section{Data Manipulation}
+
+\subsection{Team data}
+There are thirteen teams participated in IPL which was held for nine seasons. Each team was having its team name and teamId. These details are taken from the data source team.csv. Python’s csv module is used to read the data from this csv file. As this data represents a key value pair, csv module’s dictreader method is used to read the row in these files. Using this method, a dictionary was created which consisted of the teamId’s as keys and team name as value objects. 
+
+\subsection{Match data}
+ 
+Details pertaining to a specific match are published to the Match.csv file. These details include host team name, guest team name, toss winner id, match winner id, decision of the toss, win type. This data was used and modified for calculating the impact of each factors stated in the factors description. Python’s pandas dataframes were used to read the data from these csv files. All the missing values in the dataframes are replaced with 0 to ease the complexities that arise with null values. 
+For each value in the team dictionary, the teamId is matched with the opponent team id column and team name id column in the match.csv. Python’s operator module is used to obtain the or condition between these values. Dataframe is modified with the given conditions .This dataframe is converted to list. This way, list of matches played by a team is defined and stored into a list.
+
+
+From the dataframe which contains the list of matches played by the team, column matchwinnerid is used to define if the match winner. A new dataframe is created with a condition if the matchwinnerid’s value in the column is equals to the id of the current team. If the above-mentioned condition is true, then this value is added to the dataframe, else the value is removed from the dataframe. This way, list of matches won by a team is determined.
+
+
+A new dataframe is created to store the Booleans of the toss decision.From the teamdata dataframe, the column toss winner id is used to determine the toss winner for each match. If the id value in this column is same as the team id of the current team, Boolean true is appended to the toss list. Else, Boolean false is appended to the toss list. This list contains only Booleans. 
+
+\subsection{Ball-by-ball data}
+Ball by ball analyses will be required to calculate the scores for each ball. These details will include the number of runs scored in the ball, extra runs scored, bowler details, batsman details, over details. This data is extracted from the ballbyball.csv file. This file contains ball by ball analysis of all the matches. This data is sorted according to the match id and is extracted for further analysis. Pandas readcsv method is used to read the csv file. A new data dataframe called balldata is created.
+
+
+Balldata csv is used to for calculating the runs scored by a team in a specific match. The balldata dataframe is filtered for useless columns and null values. All the null values are replaced with 0 to ease the complexities which comes with usage of null values. Balldata’s team batting id and match id are used to calculate the runs scored by a team in a specific match. This data frame is modified such that , the values in the match id column is equal to the current match id and the values in the team batting id is equal to the current team id. Python operator module is used to achieve the and condition in the above case. 
+The modified ball data data frame is used to calculate the score. The sum method on the dataframe is used from the pandas library. This score is categorised into four categories. The first category included the score which are less than hundred. The second category included the scores which are between hundred and one hundred fifty. The third category included the scores which are between one hundred fifty and two hundred. The fourth category of scores contain scores which are above two hundred. 
+
+
+A new list is created which stored the category of the scores. If the score falls in first category, then an integer 1 is appended to the list. If the score falls in the second category, integer 2 is appended to the list. If the score falls in the category falls in the third category, an integer 3 is appended. If the score falls in the category four, an integer 4 is appended to the list.
+The other factor which was stated in the factors in consideration team’s score composition. It is highly probable that a team scores a high total or chase down the target imposed by the opposition team quickly is the majority of runs are scored in the form of boundaries. The ball data dataframe which is created in the previous case is utilised with other conditions to calculate the contribution of boundaries to the total score. This dataframe is filtered with the match id and team id condition to obtain the current match and current batting team. This is again filtered for all the scores that are having values either four or six. The minified frame is filtered for all values of four and summed. The same is repeated with the sum of six values. Adding together these two sums will give the total amount of runs scored in form of boundaries.
+
+A new list is created for storing the Booleans related to the contribution of boundaries to the score. This list is appended with value true, if the contribution of boundaries is more than other forms of runs, false if, the contribution of boundaries is less than the contribution of other forms of runs.
+
+The lists which are created for each factor are used to define factors’ impact on the game’s result. These lists contain the values in the form of integers and Booleans which are obtained by using the existing parameters. These lists are created for each value in the team.csv file. Thus, they are independent to each team. A new DataFrame is created with these lists as columns in the frame. For each team, these frames are stored into another csv file using the pandas write csv function with the file name same as the value in the team dictionary.
+
+\section{Predictive Analysis}
+
+The factors and their values are written in to a csv file which contains the factor names as the columns headings and their respective values in the rows. Each team has its independent statistics files mentioned in the above statement. These files will be used for conducting the predictive analysis. For each value in the team dictionary, these csv files which are specific to the team are read using the pandas csv reader function.  There are two types of columns in these statistics file. The first type is predictors and the other type is targets. Columns related to the factors which impact the results are considered as the predictor columns, Columns related to the result of the match are considered as the targets column. Columns battingfirst, boundaries majority, wontoss , scorerange are predictors. Wonmatch column is target in the given scenario. 
+
+The data available in the statistics files is split into test and train sets. This is done by the function train test split in the sklearn library in the python. The data is split in the ratio of 3 is to 2. Sixty percent of the data is used as training set. Forty percent of the data is used as testing set. The predictors and target of the training set are used to build the mathematical model. The predictors of the testing set are used to predict the values of the targets. These predicted values are compared with the actual target values. This comparision is used to determine the accuracy of the prediction.
+
+\subsection{Implementation}
+
+Decision trees and Random forest are used in making the predictions. Decision trees are tree like structures which are built based on the values of the parameters. These trees are useful in defining the probability of the target value being attained. Trees are build with various stems which are drawn from conditional statements. Decision trees has three kinds of elements. The first element i.e., are the decision elements which refer to the block which checks for the condition or logic of the tree. Chance elements are the elements which occur depending on the condition or logic of the function. End elements are the results or outcome of the decision tree. These are basically leaf nodes of the tree. These nodes represent the result. 
+Random Forests are conglomeration of decisions from various decision trees. In random forest approach, a dataset is divided into various subsets which will have some or all the input parameters as the decision makers and some or all the data which are the values for the parameters. Each subset is used to build a tree by using principles of decision tree. The predictions from these prediction trees are used in determining the final value. When a given set of input parameters are giving, they are predicted with all the decision trees developed by the forest. The outcome from all the decision trees are noted. The majority of these outputs is decided as result. This way, the errors which might arise in using only one decision tree can be eradicated. An error from one model of decision tree will be dominated by the results from all the other decision tree. 
+
+Random forest classifier from the module sklearn is used to build the various decision trees and predict these values. Classifier type object is instantiated in the code/cite. This object is assigned with the RandomForestclassifier and an attribute called n estimator. The variable n estimator will define the number of decision trees to be build for the analysis. Fit function from the sklearn module is used to develop the model for the random forest algorithm. Fit function will take the training parameters and training targets as inputs. These are divided into fifty subsets in this scenario. Predict function is used to predict the value of the target given test predictor variable as inputs. 
+
+\subsection{Accuracy}
+
+Generation of only one decision tree as the model for the given training data would produce erroneous results. Using the random forests, fifty decision trees are built to predict the correct value of the target. This way, errors produced by one of the decision tree will be corrected by the predictions from the other trees.
+
+
+In the graph/cite, the accuracy of using various number of decision trees are plotted against the number of decision trees. It can be observed that using less than five decision trees, the accuracy for the prediction for all the teams is around sixty percentage. As the number of decision trees increased, the accuracy of all the prediction is increased by at least ten percent. The hundred percent accuracy is because, those teams have played less number of games.
+
+
+\begin{acks}
+
+  The authors would like to thank Dr. Gregor von Laszewski for his
+  support and suggestions to write this paper.
+
+\end{acks}
+
+\bibliographystyle{ACM-Reference-Format}
+\bibliography{report} 
+
+\appendix
+
+We include an appendix with common issues that we see when students
+submit papers. One particular important issue is not to use the
+underscore in bibtex labels. Sharelatex allows this, but the
+proceedings script we have does not allow this.
+
+When you submit the paper you need to address each of the items in the
+issues.tex file and verify that you have done them. Please do this
+only at the end once you have finished writing the paper. To d this
+cange TODO with DONE. However if you check something on with DONE, but
+we find you actually have not executed it correcty, you will receive
+point deductions. Thus it is important to do this correctly and not
+just 5 minutes before the deadline. It is better to do a late
+submission than doing the check in haste. 
+
+
+
+\end{document}
