@@ -130,7 +130,116 @@ Random forest classifier from the module sklearn is used to build the various de
 Generation of only one decision tree as the model for the given training data would produce erroneous results. Using the random forests, fifty decision trees are built to predict the correct value of the target. This way, errors produced by one of the decision tree will be corrected by the predictions from the other trees.
 
 
-In the graph/cite, the accuracy of using various number of decision trees are plotted against the number of decision trees. It can be observed that using less than five decision trees, the accuracy for the prediction for all the teams is around sixty percentage. As the number of decision trees increased, the accuracy of all the prediction is increased by at least ten percent. The hundred percent accuracy is because, those teams have played less number of games.
+In the graph \ref{f:treenumvsaccuracy}, the accuracy of using various number of decision trees are plotted against the number of decision trees. It can be observed that using less than five decision trees, the accuracy for the prediction for all the teams is around sixty percentage. As the number of decision trees increased, the accuracy of all the prediction is increased by at least ten percent. The hundred percent accuracy is because, those teams have played less number of games.
+
+\section{Impact of factors}
+
+This indicates the contribution of each factor for predicting the result of the game. These values will determine the probability of the value of result on any given values for the input variables. In the first step, the distinct values of the target value are noted. For all the distinct values of an input parameter from the set of values of one of the input parameter, the probability of different kind of results  are calculated. This calculation is repeated for the distinct values in the set of input parameter and summed at the end. This produces the importance of the feature. The above procedure is repeated for all the decision tree and all the value are averaged for getting the overall value of the importance feature for that feature. This procedure is repeated for all the input parameters. This will give the contribution of each parameter to the result values. 
+
+\subsection{Batting First}
+
+The first importance feature for all the teams are plotted in the graph \ref{f:BattingFirst} . It is clear from the graph that the importance feature batting first is highest for Rising Pune super giants. This indicates that this team have won most of their previous matches with while batting first in the game. While the Chennai Super kings and Kochi Tuskers are also high, but they are less than half. This indicates that batting first in the match will be a favourable condition for the above mentioned   teams. For all the other teams except Kings xi Punjab, Pune warriors and Sunrisers Hyderabad, the batting first importance factor is nearly around 0.1 . This implies, out of all that matches which were present in the training set, these team batted first for only ten percent of the games. 
+
+However, the total number matches should also be considered while validating this condition. Though the value for Kochi Tuskers is high, this might also be because they have played less number of matches and they have batted first in all the winning matches.
+
+\subsection{Score Composition}
+
+Score Composition composition is the combination of different ways of getting runs. For any high scoring and successful game, a team will have to score runs at faster rate. Hence, scoring runs in form of boundaries will help a team a lot in turning the match in their favour.  In the graph \ref{f:BoundariesMajority} , Contribution of this factor against each team is plotted. This graph summarises the contribution towards of the score composition factor towards the factor. This factor is very high for Kochi Tuskers team, because they have played considerably less number of games. 
+
+
+A factor around 0.2 to 0.3 seems around the average value for all the teams. It is clearly seen from the graph that this factor is high for Rising Pune Supergiants. That means, Out of all the matches this team have won in all the season, in most of the matches, this team have scored most of their runs in form of boundaries.  Then, Rajasthan royals and Delhi Daredevils are having next higher values. A lower value of this factor means, that out of all the matches which this specific team have won, they have scored most of them in form of another form. Sunrisers Hyderabad and Royal challengers are one such team.
+
+ 
+This factor is calculated independent of the team composition. This factor can be normalised with respect to the team composition.
+
+\subsection{Score Range}
+
+Score is the total number of runs scored by a team in a specific innings of the match. This factor is categorised into four categories. Each category has a range of value for runs. Based, on this runs, the team is classified into categories. The first category of team will have scored less than hundred runs. The second category of team have scored less than one hundred fifty. The third category of team have scored less than two hundred runs. The remaining teams comes under the fourth category. 
+  
+  This categorisation is used as one factor in determining the results. From the graph, it can be seen that this value is very high for some of the teams and considerably less for other teams. A higher value of this factor means that out of all the matches the specific team has won, most of the matches they have scored the runs in the higher categories ,or out of all the matches they lost, they have scores in the lower categories of the score. 
+
+ From the graph \ref{f:scorerange} ,It is clear that, teams Kolkatta Knight Risers and Sun Risers Hyderabad have a value around 0.6. This implies that the wonmatch of column for this teams was mostly decided by the score range category column. For the teams like Gujarat Lions and Rising Pune Super giants , this value is low. It can be inferred that the wonmatch column for this table is mostly decided by other columns in the team statistics table.
+ 
+\subsection{Toss}
+
+Toss is another important factor considered for this analysis. The winner of the toss has the power to decide the sequence of the match. This decision of the winning captain will effect the results of the match. Given this opportunity, any captian would take decision in favour their side. Hence, toss is one important factor in deciding the results of the match. 
+
+A higher value of this factor implies, that out of all the matches the specific team has won, they have also won the toss in most of the matches. It also implies that the column wontoss have contributed a large amount to the target column. A lower value of this factor implies that out of all the matches a specific team has lost, most of the matches they have lost the toss. 
+
+ From the graph \ref{f:Wontoss} it is clear that the this value is higher for teams Delhi Daredevils, Gujarat Lions and Royal challengers bangalore. This implies that out of the matches they have won, most of the matches they have won the toss. This implies toss is one of the important factor for this team to win a specific match. It is clear from the graph that this value is lower for teams like Kolkatta Knight risers. This implies that out of all the matches won by this team, they have won toss in less number of matches. This implies that toss is not one of the important factors for this team to win. 
+ 
+For the other teams, this value is around 0.15 which is considered as average contribution. For these teams, toss decision have a fair impact on the decision of the match. The wontoss column in the team statistics  have contributed fair amount to the target column.
+
+ 
+\section{Statistical Analysis}
+This analysis will give the statistics of each factors and their importance in the previous matches for each team. This is done by gathering the data from the team statistics which is prepared as part of the first step in the predictive analysis. 
+
+A dictionary of team names is prepared using the teams.csv file from the source. This file is read using the read csv method in the csv library. An empty is list is created for the factors batting order,score range, toss. As there is only one kind of value for all these factors, they are grouped and studied together. The score range is studied in a different program. 
+
+These empty lists are used for storing the percentage contribution of each factor towards the results of analysis. In this case, the data is not divided into test and training sets. All the data in the data sets are taken into consideration. The values used in the analysis are the actuals value and no predictions are made in defining these values. 
+
+For every element in the team dictionary, we iterate over the specific team statistics csv file created in the first step of this predictive analysis. From these csv files , we resd the columns battingsfirst, majorityscore, wontoss columns. For each columns in the csv file, we create a corresponding dataframe in the python program using the pandas dataframe.  This dataframes are constructed on based on two values. The wonmatch column value and the value of the factor being studied. We append the corresponding row to the dataframe only if both the conditions are satisfied. This kind of conditional statements can be achieved by python or operator. 
+
+For every factor, now independent dataframes are defined after both the  conditions are satisfied. Total matches is the length of the csv file. From the above calculatethe percentage of the dataframe which we have captured with respect to the total length of the csv file. This percentage value determines the percentage contribution of the factor towards determining the winning chances of the team.
+
+ These percentages are calculated for all the teams in the team dictionary. These values are stored in the respective factors list. This list is used for plotting the bar graphs using the pythons matplotlib.
+
+\subsection{Analysis of individual team}
+From the the lists of percentage contributions from the above anaylsis. Analysis of each factor and their contribution towards the individual team has been plotted in the graph. These plots are plotted against the team name and the percentage bars which show the percentage of each factor.Graph \ref{f:otherstats} has been plotted with above lists. 
+
+For the team Kolkatta knight riders, out of all the matches they have won, in forty percentage of those matches, they have score majority of their score in form of boundaries. Out of all the matches they have won, they also won toss in thirty percentage of the matches and batted first in twenty percentage of the matches. This implies that the probability of winning a match for kolkatta Knight riders team is high if they score moajority of their score in form of boundaries. Then decision of toss and sequence of matches have considerable effect in the matches’ decision.
+
+Team Royal Challengers bangalore have followed the same trend as the kolkatta team in the analysis. Out of all the matches they have won, they also scored majority of the runs in the form of boundaries. While ,out of these matches, they won only twenty percent of the tosses, they batted first in nearly twenty five percentage of the matches. Runs have been major contributing factor in this team also.
+
+Chennai Super Kings have majority of their contribution from the toss factor and batting sequence factor together. That implies that, from the all the matches they have won, they either won the toss or batted first in the match. This implies that the team Chennai Super kings will have to win toss or bat first to win the match.
+
+
+Teams punjab and Kochi Tuskers have followed trend similar to that of Kolkatta Knight risers and royal challengers bangalore. They scored majority of their score in the form of boundaries in nearly forty percent of the matches played by them. The other factors toss and batting sequence have contributed to nearly twenty percentage of their winnings. This implies that scoring majority of runs in form of boundaries will favour these teams. 
+
+
+Mumbai Indians team have the second highest percentage contribution from the factors toss and batting sequence compared to other teams. This team also have third highes contribution from the score composition factor. That implies, this team have higher chance of winning given any factor. Though the value from the any one factor is against them, the other factor will over ride the effect of the previous factor.
+
+
+Gujarat Lions have the highest contribution from the factor batting order. That implies, out of all the matches won by this team, they have scored majority of runs in the form of boundaries. The other two factors are considerably low. This implies that Gujarat team will have to score most of the runs in the form of boundaries to win the match.
+
+
+It can be inferred from the graph that rising pune super giants have not won a match while batting first in the game. Out of all the matches won by them, they have either batted second in the game or score majority of runs in the form of boundaries.
+
+Team Deccan chargers have almost same amount of contribution from all the three factors. This team is consistently performing in any values of the factors. They have good balance of the conditions in the previous games.
+
+Team Pune warriors has the lowest values for the factors toss and sequence of the match. They are also have less contribution from the factor composition of score. This implies that this team is under performing in any given condition. 
+
+\subsection{Analysis of Range of Scores}
+
+The scores were divided into categories. This analysis will contribute the percentage contribution of each range of the score to the result of the matches played by the specific team. This analysis can be used as to determine the safe score range for every team. 
+
+
+Team dictionary is taken from the team.csv file. The team statistics csv file which is created in the predictive analysis will be utilised for the value for range of scores. The values from the columns score range and wonmatch will be utilised. The data in this csv file is not partitioned into training and testing sets. This analysis is performed on complete data. No data is predicted in this analysis also. This is analysis on all the available data. 
+
+
+For every value in the team dictionary, we locate the team statistics csv file which is generated as part of the predictive analysis. Four empty lists are generated to store the number of matches won by each team with score in the given score range. Total number matches can be calculated by using the length of team statistics csv file that is being studied upon. For every value in the team dictionary, we divide the csv file into four different data frames. Each data frame corresponds to each range of scores. This partition can be achieved by using pandas data frame.
+
+This dataframe are extracted using the two conditions. They are the value of score range must be equal to the range we are fetching data for and the other condition is the wonmatch column must be true.  
+
+After corresponding data frames are extracted from the team staistics csv, we calculate the percentage of each range data frame length against the total length of the team statistics csv. This percentage value will give us the percentage contribution of each range towards the result of the match.
+
+\subsection{Graphical Analysis on scores}
+
+From the graph \ref{f:scorestats}, it is clear that most of the wining scores fall in the second and third category. That implies for any team to win the match, it is most likely that the team must score atleast hundred runs in the match and come under second category or score atleast one hundred fifty runs and come under third category. 
+
+
+Teams Gujarat lions and pune warriors have never won match scoring less than hundred runs or more than two hundred runs. This implies that the range from hundred to two hundred is the safe score range for these teams. Gujarat have won most number of matches scoring in the third category that is atleast scoring one hundred fifty runs and atmost two hundred runs. This is more safe zone for them. While, for pune warriors team they have almost similar winning percentage in both the categories. 
+Teams rising pune supergiants and kochi have never won a game scoring more than two hundred runs. This might be bacuse, they have not scored more than two hundred runs in any given match or they have not won in the matches  in which they scored more than two hundred runs. That implies that they are having a safe scoring in the range of one hundred fifty and two hundred.
+
+
+Sunrisers Hyderabad team has more contribution from the the second and third categories of scoring in the game compared to the other two teams. This indicates that they are consistent in this category of scoring than other teams. They do not have major difference in contribution from these categories. This indicates that they are consistently scoring around one hundred fifty mark score which makes the assumption that this team have good batting side. From the statistics on this team it is clear that they have also won matches scoring less than hundred. It is clear that they are also having a good bowling side as well. 
+
+Team Royal Challengers bangalore has highest contribution from the fourth category of scoring when compared to other teams. That implies, the team royal challengers banglore have highest probability of winning the matches , if they are scoring more than two hundred runs in the match. Then their next contribution comes from the score range of third category. That implies this team has a good batting side. Because they are having high scoring percentages from the third and fourth categories. 
+
+Following the royal challenger banglore team is Chennai super kings team. This team have contributions from all the four categories of the scoring range. This implies this team is fairly consistent in both the categories of the game. 
+
+Kolkatta team has the highest contribution from the first category of scoring after Kochi team and Pune super giants. This implies that the above three teams have a good batting side. Scoring less than hundred and winning match is sight of team having a good bowling side. Upon having good contributions from category one, kolkatta knight riders also has good contributions from the other three categories as well. This implies, that this team not only has good bowling side,it also ahs a good batting side as well. 
+ 
 
 
 \begin{acks}
@@ -158,7 +267,28 @@ we find you actually have not executed it correcty, you will receive
 point deductions. Thus it is important to do this correctly and not
 just 5 minutes before the deadline. It is better to do a late
 submission than doing the check in haste. 
-
+\begin{figure}[!ht]
+  \centering\includegraphics[width=\columnwidth]{images/scorestatictics.png}
+  \caption{Score Staistics}\label{f:scorestats}
+  
+   \centering\includegraphics[width=\columnwidth]{images/otherstatistics.png}
+  \caption{Other Factors Staistics}\label{f:otherstats}
+  
+  \centering\includegraphics[width=\columnwidth]{images/treenumvsaccuracy.png}
+  \caption{Tree number vs Accuracy}\label{f:treenumvsaccuracy}
+  
+  \centering\includegraphics[width=\columnwidth]{images/BattingFirst.png}
+  \caption{BattingFirst}\label{f:BattingFirst}
+  
+  \centering\includegraphics[width=\columnwidth]{images/BoundariesMajority.png}
+  \caption{Majority of runs in boundaries}\label{f:BoundariesMajority}
+  
+  \centering\includegraphics[width=\columnwidth]{images/Wontoss.png}
+  \caption{Toss}\label{f:Wontoss}
+  
+  \centering\includegraphics[width=\columnwidth]{images/scorerange.png}
+  \caption{Range of Scores}\label{f:scorerange}
+\end{figure}
 
 
 \end{document}

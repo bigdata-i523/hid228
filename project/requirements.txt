@@ -1,0 +1,18 @@
+Following python libraries would be required for executing these project
+
+1)pandas
+2)numpy
+3)matplotlib
+4)sklearn
+5)csv
+6)operator
+
+
+Steps to execute:
+
+1) Check if the MAtch.xlsx , Ball_by_Ball.xlsx and team.csv are in the project directory.
+2) Execute datamanipulation.py . This will produce csv files named with the Team Names
+3) Execute randomforest.py.  This will produce impacts. csv file in the project directory and Tree number vs accuracy graph.
+4) Execute teamstatsgraph.py . This will read data from impacts.csv and produce the Battingfirst, MajorityBoundaries, Wontoss, scorerange graph
+5) Execute scorestatistics.py . this will produce the scorestatistics graph
+6) Execute otherstats.py . This will produce the otherstats graph
