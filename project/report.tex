@@ -49,7 +49,7 @@ Fast paced games are gaining more importance in near future. This because there 
 
 \section{Problem Statement}
 
-There are various factors influencing the results of the game. As part of this analytics, data related to five of the most influencing factors is gathered and modelled for analysis. This data was available in raw formats which requires some amount of modelling for predictive analysis. The modelled data is used for building a mathematical model which would fit closely to the trend of these factors in matches played in all the past seasons. A part of data is assumed to be unknown. This unknown part of data is predicted by using the fitted mathematical models. Results obtained by these predictions are compared with the actual results from the data source. Impact of these factors are calculated to the ratio of one. These data is analysed for each independent team and each independent season.
+There are various factors influencing the results of the game. As part of this analytics, data related to four of the most influencing factors is gathered and modelled for analysis. This data was available in raw formats which requires some amount of modelling for predictive analysis. The modelled data is used for building a mathematical model which would fit closely to the trend of these factors in matches played in all the past seasons. A part of data is assumed to be unknown. This unknown part of data is predicted by using the fitted mathematical models. Results obtained by these predictions are compared with the actual results from the data source. Impact of these factors are calculated to the ratio of one. These data is analysed for each independent team and each independent season.
 
  
 The report is in regard to the predictive analysis conducted on only five of the most influencing factors in the game. There are other factors in the game which might influence the result of the game. This predictive analysis will only be considered reliable only if the predicted values of the results will have high accuracy with respect to the actual results of the available data. The data is divided into two parts. All the available data is sorted with respect to date. The latest match comes later in the dataset and the earliest first. The first part of data is used to train the mathematical model. The parameters in the later part of the dataset are used to predict the result of the match. These predicted results are then compared with the actual results in the datasets to determine the accuracy of the predictive model which is used to build the analytics. This analysis produce valuable insights on the influence of these factors and the mathematical model.
@@ -238,14 +238,29 @@ Team Royal Challengers bangalore has highest contribution from the fourth catego
 
 Following the royal challenger banglore team is Chennai super kings team. This team have contributions from all the four categories of the scoring range. This implies this team is fairly consistent in both the categories of the game. 
 
-Kolkatta team has the highest contribution from the first category of scoring after Kochi team and Pune super giants. This implies that the above three teams have a good batting side. Scoring less than hundred and winning match is sight of team having a good bowling side. Upon having good contributions from category one, kolkatta knight riders also has good contributions from the other three categories as well. This implies, that this team not only has good bowling side,it also ahs a good batting side as well. 
- 
+Team Mumbai Indians have the highest contribution from the third category of the scoring range after Gujarat lions. They are also having contributions from all the categories of range of scores. This will clearly show that Mumbai Indians team has an inconsistent batting team. If these totals are from the second innings, it can also be assumed that whenever their batsman failed to score many runs, bowler won the match. 
 
+Kolkatta team has the highest contribution from the first category of scoring after Kochi team and Pune super giants. This implies that the above three teams have a good batting side. Scoring less than hundred and winning match is sight of team having a good bowling side. Upon having good contributions from category one, kolkatta knight riders also has good contributions from the other three categories as well. This implies, that this team not only has good bowling side,it also ahs a good batting side as well.
+
+The code for all the analysis is available in the location \cite{code} .
+
+The instructions for executing this project is available in the location \cite{requirements} . 
+ 
+\section{Conclusion}
+
+Predictive Data analytics have provided promising solutions to various problems in wide variety of fields. As part of this study, predictive and statistical data analytics on data related to a cricket League, Indian Premier league is conducted.  As part of predictive analytics, the available data is split into training and testing data sets. The values from the model are used to predict the target value. These values are compared to the original values for accuracy. Method of improving the accuracy of model is studied. This study would be useful to determine the impact of a factor on the result of the game. This analysis would help in predicting the results of the matches acuurately with the model developed from the training data.
+
+Statistical analysis on the same data is conducted to get the details related to the impact of a factor quantitatively on a specific team. This analysis pertains to the available data and no predictions are done. This kind of analysis would be useful in determining the strengths of individual team. This kind of analysis can be conducted to the nature and strengths of each team.
 
 \begin{acks}
 
-  The authors would like to thank Dr. Gregor von Laszewski for his
-  support and suggestions to write this paper.
+  The author would like to thank Dr. Gregor von Laszewski for his
+  support and suggestions to write this report.
+  
+  The author would like to thank assistant instructors for their support in completing this project.
+  
+  The author would like to acknowledge that the base data for the analysis is provided  by \cite{data} .
+  
 
 \end{acks}
 
@@ -254,19 +269,12 @@ Kolkatta team has the highest contribution from the first category of scoring af
 
 \appendix
 
-We include an appendix with common issues that we see when students
-submit papers. One particular important issue is not to use the
-underscore in bibtex labels. Sharelatex allows this, but the
-proceedings script we have does not allow this.
 
-When you submit the paper you need to address each of the items in the
-issues.tex file and verify that you have done them. Please do this
-only at the end once you have finished writing the paper. To d this
-cange TODO with DONE. However if you check something on with DONE, but
-we find you actually have not executed it correcty, you will receive
-point deductions. Thus it is important to do this correctly and not
-just 5 minutes before the deadline. It is better to do a late
-submission than doing the check in haste. 
+
+The code for all the analysis is available in the location \cite{code} .
+
+The instructions for executing this project is available in the location \cite{requirements} .
+
 \begin{figure}[!ht]
   \centering\includegraphics[width=\columnwidth]{images/scorestatictics.png}
   \caption{Score Staistics}\label{f:scorestats}
