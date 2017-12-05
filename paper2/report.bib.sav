@@ -1,0 +1,129 @@
+% Encoding: UTF-8
+
+@InProceedings{7889557,
+  author    = {S. Li and Y. Yang and L. Yang and H. Su and G. Zhang and J. Wang},
+  title     = {Civil Aircraft Big Data Platform},
+  booktitle = {2017 IEEE 11th International Conference on Semantic Computing (ICSC)},
+  year      = {2017},
+  pages     = {328-333},
+  month     = {Jan},
+  doi       = {10.1109/ICSC.2017.51},
+  keywords  = {Big Data;aircraft;avionics;civil aircraft Big Data platform;civil aviation industry;decision making support;Aircraft;Aircraft manufacture;Aircraft propulsion;Big Data;Distributed databases;Maintenance engineering;Monitoring;Big Data platform;airline schedule;civil aircraft;fuel saving;health management;maintenance plan},
+}
+
+@Misc{Miller2017,
+  author    = {Maria Miller},
+  title     = {How Data \& IoT Technology are Changing The Way We Travel},
+  month     = {JUN},
+  year      = {2017},
+  owner     = {DATACONOMY},
+  timestamp = {2017-06-21},
+  url       = {http://dataconomy.com/2017/06/data-changing-way-travel/},
+}
+
+@InProceedings{6548579,
+  author    = {T. Larsen},
+  title     = {Cross-platform aviation analytics using big-data methods},
+  booktitle = {2013 Integrated Communications, Navigation and Surveillance Conference (ICNS)},
+  year      = {2013},
+  pages     = {1-9},
+  month     = {April},
+  doi       = {10.1109/ICNSurv.2013.6548579},
+  issn      = {2155-4943},
+  keywords  = {aerospace computing;aerospace safety;aircraft instrumentation;data analysis;data mining;data warehouses;optimisation;airspace performance;airspace system performance;aviation databases;aviation safety;big data analysis methods;commercial researchers;cross platform aviation analytics;data mining methods;data normalization;data scalability;data standardization;flight tracking data;government researchers;integrated aviation data warehouse;key aviation data sets;operational analytics;operational efficiency;radar tracking data;safety optimization;uniform data sets;Aircraft;Aircraft manufacture;Airports;Cloud computing;Databases;Meteorology;Security},
+}
+
+@Misc{Wikipedia2017,
+  author       = {Wikipedia},
+  title        = {Cloud computing},
+  howpublished = {Wikipedia},
+  year         = {2017},
+  keywords     = {Cloud Computing},
+  owner        = {wikipwdia},
+  url          = {https://en.wikipedia.org/wiki/Cloud_computing},
+}
+
+@Misc{Vault2014,
+  author       = {Air Vault},
+  title        = {Virgin America Selects AirVault® Cloud-Computing Service for Aircraft Maintenance Records Management},
+  howpublished = {AirVault},
+  month        = {05},
+  year         = {2014},
+  owner        = {AirVault},
+  timestamp    = {2014-05-02},
+  url          = {http://www.airvault.com/news/virgin-america-selects-air-vault-cloud-computing-service-for-aircraft-maintenance-records-management/},
+}
+
+@Misc{Ferkoun2015,
+  author       = {Maamar Ferkoun},
+  title        = {Cloud computing helps airline industry soar},
+  howpublished = {IBM},
+  month        = {02},
+  year         = {2015},
+  owner        = {IBM},
+  timestamp    = {2015-02-02},
+  url          = {https://www.ibm.com/blogs/cloud-computing/2015/02/cloud-computing-helps-airline-industry-soar/},
+}
+
+@Misc{Finnegan2013,
+  author       = {Matthew Finnegan},
+  title        = {Boeing 787s to create half a terabyte of data per flight, says Virgin Atlantic},
+  howpublished = {COMPUTERWORLDUK},
+  month        = {03},
+  year         = {2013},
+  owner        = {COMPUTERWORLDUK},
+  timestamp    = {2013-03-06},
+  url          = {https://www.computerworlduk.com/data/boeing-787s-create-half-terabyte-of-data-per-flight-says-virgin-atlantic-3433595/},
+}
+
+@Misc{Maire2017,
+  author       = {Sebastien Maire and Chris Spafford},
+  title        = {The Data Science Revolution That's Transforming Aviation},
+  howpublished = {Forbes},
+  month        = {06},
+  year         = {2017},
+  owner        = {Forbes},
+  timestamp    = {2017-06-14},
+  url          = {https://www.forbes.com/sites/oliverwyman/2017/06/16/the-data-science-revolution-transforming-aviation/},
+}
+
+@Misc{Smalley2012,
+  author       = {Eric Smalley},
+  title        = {NASA Applies Text Analytics to Airline Safety},
+  howpublished = {DataInformed},
+  month        = {07},
+  year         = {2012},
+  owner        = {DataInformed},
+  url          = {http://data-informed.com/nasa-applies-text-analytics-to-airline-safety/},
+}
+
+@Misc{EXASTAX2017,
+  author       = {EXASTAX},
+  title        = {How Airlines are Using Big Data},
+  howpublished = {EXASTAX},
+  month        = {01},
+  year         = {2017},
+  timestamp    = {2017-01-26},
+  url          = {https://www.exastax.com/big-data/how-airlines-are-using-big-data/},
+}
+
+@InProceedings{7015483,
+  author    = {A. M. Chandramohan and D. Mylaraswamy and B. Xu and P. Dietrich},
+  title     = {Big Data Infrastructure for Aviation Data Analytics},
+  booktitle = {2014 IEEE International Conference on Cloud Computing in Emerging Markets (CCEM)},
+  year      = {2014},
+  pages     = {1-6},
+  month     = {Oct},
+  doi       = {10.1109/CCEM.2014.7015483},
+  keywords  = {Big Data;aerospace engineering;data analysis;storage management;APU;Big Data infrastructure;auxiliary power units;aviation data analytics;cluster design;data collection;data loading;health monitoring;storage strategy;Aircraft;Big data;Data mining;Data visualization;Maintenance engineering;Market research;Servers},
+}
+
+@Misc{Wikipedia,
+  author       = {Wikipedia},
+  title        = {Aircraft communications addressing and reporting system},
+  howpublished = {Wikipedia},
+  owner        = {wikipedia},
+  url          = {https://en.wikipedia.org/wiki/Aircraft_communications_addressing_and_reporting_system},
+}
+
+@Comment{jabref-meta: databaseType:bibtex;}
