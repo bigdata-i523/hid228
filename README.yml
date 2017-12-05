@@ -47,3 +47,28 @@ paper2:
     title: Big Data Applications in Aviation Industry
     type: latex
     url: https://github.com/bigdata-i523/hid228/paper2/paper2.pdf
+    
+    project:
+    abstract: >
+        Cricket is one of the most admired sports across the globe. Indian Premier League is
+        one of the professional cricket leagues conducted by Board of Cricket Control India in 
+        the months of April and May. This league is famous for its diversity of players and
+        breath-taking cricket match endings. The factors of winning change for each moment 
+        as the game progresses. As there are many players and franchises involved in the game,
+        these factors for winning changes for each team. Data related to each player is required
+        to analyse his performance and predict his future scope in team. Data related to factors of
+        winning is crucial and can be analysed for predicting the results of the game. This analysis
+        would help the team management, league administration to wisely chose the players and modify
+        rules according to the impact of each decision. Data related some of the important factors 
+        which plays major role in deciding the match winner are analysed. Their impact is predicted
+        and compared with the actual results. Impact of these factors are studied for each individual
+        team and individual season of this cricket tournament. Impact of each factor is plotted and its
+        impact in next season is predicted.
+    author:
+        - Swargam, Prashanth
+    chapter: Sports
+    hid:
+        - 228
+    status: Dec 04 17  100%
+    title: Big data applications in Indian Premier League
+    type: latex
