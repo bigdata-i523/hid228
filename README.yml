@@ -48,7 +48,7 @@ paper2:
     type: latex
     url: https://github.com/bigdata-i523/hid228/paper2/paper2.pdf
     
-    project:
+project:
     abstract: >
         Cricket is one of the most admired sports across the globe. Indian Premier League is
         one of the professional cricket leagues conducted by Board of Cricket Control India in 
