@@ -26,7 +26,6 @@ paper1:
         - 228
     status: Oct 20 17  100%
     title: Big data applications in Electric Power Distribution
-    type: latex
     url: https://github.com/bigdata-i523/hid228/paper1/paper1.pdf
 paper2:
     abstract: >
@@ -45,7 +44,6 @@ paper2:
         - 228
     status: Nov 06 17 100%
     title: Big Data Applications in Aviation Industry
-    type: latex
     url: https://github.com/bigdata-i523/hid228/paper2/paper2.pdf
     chapter: Transportation
 project:
